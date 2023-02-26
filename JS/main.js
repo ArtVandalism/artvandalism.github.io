@@ -1,3 +1,7 @@
+setTimeout(function(){
+	document.body.classList.add('body_visible');
+}, 500);
+
 // 3D Scroll
 
 let zSpacing = -1500,
@@ -26,7 +30,7 @@ window.onscroll = function () {
 
 }    
 
-window.scrollTo(0, 1)
+window.scrollTo(0, 10)
 
 // Audio
 
@@ -40,6 +44,6 @@ let soundButton = document.querySelector('.soundbutton'),
 
     window.onblur = function () {
         audio.pause ()
-        soundButton.classList.toggle('paused')
+        // soundButton.classList.toggle('paused')
     }
     

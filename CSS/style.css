@@ -16,7 +16,41 @@
     font-weight: 100;
 }
 
+/* Start Preloader */
 
+.preloader {
+    /*фиксированное позиционирование*/
+    position: fixed;
+    /* координаты положения */
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* фоновый цвет элемента */
+    background: #000000;
+    /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+    z-index: 1001;
+  }
+  
+
+  .loaded_hiding .preloader {
+    transition: 0.3s opacity;
+    opacity: 0;
+  }
+  
+  .loaded .preloader {
+    display: none;
+  }
+
+/* End Preloader */
+
+.body_hide {
+	opacity: 0;
+	transition: 4s opacity ease-in-out;
+}
+.body_visible {
+	opacity: 1;
+}
 
 :root {
     --index: calc(1vw + 1vh);
