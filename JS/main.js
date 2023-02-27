@@ -4,7 +4,7 @@ setTimeout(function(){
 
 // 3D Scroll
 
-let zSpacing = -1500,
+let zSpacing = -800,
     lastPos = zSpacing / 5,
     $frames = document.getElementsByClassName('frame'),
     frames = Array.from($frames),
